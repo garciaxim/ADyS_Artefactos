@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros y Descripción del Proyecto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <span class="text-primary">Artefactos</span>Club de Leones
+            </a>
+            <button class="navbar-toggler" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="nosotros.html" class="nav-link active">Nosotros</a></li>
+                    
+                    <!-- Menú desplegable para Sprint 0 -->
+                    <li class="nav-item dropdown">
+                        <a href="#" 
+                            class="nav-link dropdown-toggle" 
+                            id="sprint0Dropdown" 
+                            role="button" 
+                            data-bs-toggle="dropdown" 
+                            aria-expanded="false">
+                            Sprint 0
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="sprint0Dropdown">
+                            <li><a class="dropdown-item" href="Sprint0.html">Descripción</a></li>
+                            <li><a class="dropdown-item" href="Diagramas.html">Diagramas</a></li>
+                            <li><a class="dropdown-item" href="#stakeholders">Requerimientos</a></li>
+                            <li><a class="dropdown-item" href="#actores">Actores</a></li>
+                            <li><a class="dropdown-item" href="#metodologia-agil">Metodología Ágil</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="sprint1.html" class="nav-link">Sprint 1</a></li>
+                    <li class="nav-item"><a href="sprint2.html" class="nav-link">Sprint 2</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Sección "Descripción del Proyecto" -->
+    <div class="container mt-5 pt-5">
+        <h1 class="text-center text-primary mb-4">Descripción del Proyecto</h1>
+
+        <section class="mb-5">
+            <h2 class="text-secondary">Información del Proyecto</h2>
+            <p>Para el <strong>Club de Leones</strong>, quien necesita un sistema para gestionar el registro de eventos deportivos, el <strong>Desafío León</strong> es una aplicación web de gestión de eventos deportivos que facilita el registro, organización y seguimiento de eventos, inscripciones y desempeño de competidores. A diferencia de las taloneras para verificación de inscripción y Google Forms para registrar el desempeño en cada sesión, nuestro producto permite gestionar múltiples tipos de eventos, generar reportes históricos y gráficos de desempeño, organizar información de competidores y descargar reconocimientos en línea.</p>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="text-secondary">Perspectiva del Producto</h2>
+            <p>El <strong>Desafío León</strong> es una solución tecnológica diseñada para gestionar de manera eficiente y moderna la organización de los eventos deportivos. Este sistema no solo automatiza el registro y seguimiento de eventos, sino que facilita la comunicación y transparencia con los competidores y el personal del Club de Leones, permitiendo que cada evento se ejecute de manera coordinada, accesible y motivadora.</p>
+        </section>
+
+        <section>
+            <h2 class="text-secondary">Funciones del Producto</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Registro de eventos deportivos: Admitir una amplia variedad de eventos (como acuatlones, carreras, triatlones) con la flexibilidad de añadir nuevos tipos de eventos.</li>
+                <li class="list-group-item">Gestión de inscripciones: Los eventos contarán con fechas de inscripción que tendrán una duración definida, modalidades de participación, costos, requisitos y reglas específicas.</li>
+                <li class="list-group-item">Registro y monitoreo de competidores: Se registrarán datos de rendimiento de cada competidor por sesión, incluyendo métricas de desempeño individual y de relevos.</li>
+                <li class="list-group-item">Organización por categoría: El sistema organizará a los competidores por categorías y géneros, incluyendo competidores asociados a sedes o escuelas, así como nuevos participantes.</li>
+                <li class="list-group-item">Historial y análisis de rendimiento: Permitirá mantener un historial detallado de los competidores a lo largo del tiempo, generando gráficos y reportes para comparar el desempeño en diferentes periodos.</li>
+                <li class="list-group-item">Premiaciones y reconocimientos: Generará constancias de los mejores lugares y reconocimientos descargables con información del evento, méritos y posiciones alcanzadas.</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Sección "Stakeholders" -->
+    <div id="stakeholders" class="container mt-5 pt-5">
+        <h2 class="text-center text-primary mb-4">Stakeholders</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Responsabilidad</th>
+                    <th>Participación</th>
+                    <th>Entregables</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Club de Leones</td>
+                    <td>Organización que solicita el desarrollo del sistema.</td>
+                    <td>Aportar los requisitos del sistema, revisar el progreso del desarrollo y aprobar el producto final.</td>
+                    <td>En reuniones de revisión y retroalimentación del sistema.</td>
+                    <td>Validación de los requerimientos y aprobación de las entregas de cada iteración del sistema.</td>
+                </tr>
+                <tr>
+                    <td>Competidor</td>
+                    <td>Participante en los eventos deportivos registrados en el sistema.</td>
+                    <td>Inscribirse en los eventos y participar en las actividades correspondientes.</td>
+                    <td>Registro de su participación en eventos, y revisión de su rendimiento y logros en el sistema.</td>
+                    <td>Registro de inscripción y resultados individuales.</td>
+                </tr>
+                <tr>
+                    <td>Instructor</td>
+                    <td>Persona encargada de supervisar y registrar el rendimiento de los competidores durante los eventos.</td>
+                    <td>Registrar los datos de rendimiento y progreso de los competidores en cada evento.</td>
+                    <td>Utiliza el sistema para cargar datos de rendimiento y revisar estadísticas.</td>
+                    <td>Datos de rendimiento de competidores y reportes de desempeño.</td>
+                </tr>
+                <tr>
+                    <td>Responsable del Evento</td>
+                    <td>Organizador directo del evento que se encarga de coordinar su ejecución.</td>
+                    <td>Gestionar el desarrollo del evento, incluyendo la logística y supervisión general.</td>
+                    <td>Configuración del evento en el sistema, supervisión de las inscripciones y resultados.</td>
+                    <td>Datos de registro del evento, incluyendo inscripciones y parámetros de logística.</td>
+                </tr>
+                <tr>
+                    <td>Administrador</td>
+                    <td>Usuario con permisos completos sobre el sistema, encargado de la administración y gestión principal.</td>
+                    <td>Gestionar el alta y baja de otros usuarios del sistema (como organizadores, competidores e instructores), así como tener control sobre la configuración y gestión de los eventos.</td>
+                    <td>El sistema actualizado en cuanto a usuarios y eventos, asegurando el funcionamiento óptimo y la coherencia en la información del sistema.</td>
+                    <td>Control de acceso de usuarios, gestión de eventos y supervisión general del sistema.</td>
+                </tr>
+                <tr>
+                    <td>Profesora Reyna Elia Melara Abarca</td>
+                    <td>Profesora de la materia de Análisis y Diseño de Sistemas, responsable de la supervisión académica del proyecto.</td>
+                    <td>Guiar y supervisar el cumplimiento de los requisitos académicos del proyecto, y asegurar la aplicación de buenas prácticas de análisis y diseño.</td>
+                    <td>Realiza revisiones periódicas y da retroalimentación en las etapas de desarrollo del sistema.</td>
+                    <td>Feedback en base al avance y cumplimiento de los objetivos de aprendizaje.</td>
+                </tr>
+                <tr>
+                    <td>Equipo de Desarrollo</td>
+                    <td>Grupo encargado de diseñar, desarrollar y probar el sistema.</td>
+                    <td>Realizar el análisis, diseño, programación, pruebas y documentación del sistema.</td>
+                    <td>Reuniones de planificación, desarrollo de módulos y presentación de avances al cliente.</td>
+                    <td>Documentación asociada al sistema. Sistema funcional.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Sección "Actores" -->
+    <div id="actores" class="container mt-5 pt-5">
+        <h2 class="text-center text-primary mb-4">Actores</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Actor</th>
+                    <th>Descripción</th>
+                    <th>Responsabilidad</th>
+                    <th>Interacción con el Sistema</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Competidor</td>
+                    <td>Persona inscrita en eventos deportivos del Club de Leones, que participa en las competencias y actividades.</td>
+                    <td>Inscribirse en eventos, participar activamente, y consultar sus estadísticas y reconocimientos en el sistema.</td>
+                    <td>Puede ver sus resultados, descargar reconocimientos y consultar su historial de competencias.</td>
+                    <td>Registro en eventos, consulta de su desempeño histórico y reconocimientos.</td>
+                </tr>
+                <tr>
+                    <td>Instructor</td>
+                    <td>Responsable de monitorear el rendimiento de los competidores en cada sesión o evento.</td>
+                    <td>Registrar y actualizar los datos de rendimiento de los competidores, generando un historial de logros y progresos.</td>
+                    <td>Accede a módulos de gestión de datos de rendimiento, incluyendo la opción de registrar sesiones fuera de calendario con autorización.</td>
+                    <td>Registro y consulta de métricas de desempeño, supervisión de la evolución de competidores en diversas competencias.</td>
+                </tr>
+                <tr>
+                    <td>Organizador</td>
+                    <td>Persona designada para organizar y gestionar un evento deportivo, incluyendo la convocatoria y detalles logísticos.</td>
+                    <td>Configurar y gestionar los detalles de cada evento, como fechas, modalidades, y requisitos de inscripción.</td>
+                    <td>Administra la configuración y monitoreo del evento, gestiona inscripciones y supervisa los resultados.</td>
+                    <td>Creación y configuración de eventos, monitoreo de inscripciones y seguimiento de competencias, publicación de reglas y condiciones del evento.</td>
+                </tr>
+                <tr>
+                    <td>Administrador</td>
+                    <td>Usuario con control maestro sobre el sistema, que gestiona el acceso y roles de otros actores, así como la organización de los eventos.</td>
+                    <td>Administrar usuarios (altas y bajas de competidores, organizadores e instructores) y gestionar eventos, con permisos para modificar parámetros críticos del sistema.</td>
+                    <td>Controla la gestión de eventos y usuarios, manteniendo la seguridad y consistencia en el uso del sistema.</td>
+                    <td>Alta y baja de usuarios, supervisión y gestión de eventos en conjunto con los organizadores.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Sección "Metodología Ágil" -->
+    <div id="metodologia-agil" class="container mt-5 pt-5">
+        <h2 class="text-center text-primary mb-4">Metodología Ágil</h2>
+        <h3>Implementación de Metodologías Ágiles en el Proyecto</h3>
+        <p>Las metodologías ágiles representan un enfoque moderno y eficiente para la gestión y desarrollo de proyectos. Diseñadas para responder a los retos de los entornos cambiantes, estas metodologías priorizan la entrega continua de valor, la colaboración activa entre los miembros del equipo y los stakeholders, y la adaptación constante a los requisitos del cliente. En este proyecto, la implementación de metodologías ágiles juega un papel fundamental en la creación de un producto que cumpla con altos estándares de calidad, accesibilidad y usabilidad.</p>
+
+        <h4>Razones para el uso de Metodologías Ágiles</h4>
+        <ul>
+            <li><strong>Flexibilidad ante el cambio:</strong> Las metodologías ágiles permiten ajustar los objetivos y prioridades en cualquier etapa del proyecto.</li>
+            <li><strong>Entregables frecuentes:</strong> El equipo puede proporcionar incrementos funcionales del producto de manera periódica, lo que fomenta una mejora continua.</li>
+            <li><strong>Colaboración y comunicación constante:</strong> Las metodologías promueven la participación activa del cliente y del equipo de desarrollo.</li>
+            <li><strong>Reducción de riesgos:</strong> La revisión constante de los entregables y la incorporación de retroalimentación minimizan el riesgo de desviaciones significativas.</li>
+        </ul>
+
+        <h4>Elementos Clave del Enfoque Ágil</h4>
+        <p>El enfoque ágil en el desarrollo de este sistema se basa en iteraciones y mejoras continuas, con reuniones periódicas y análisis de los avances realizados.</p>
+    </div>
+<!-- Sección "Cronograma" -->
+<div class="container mt-5 pt-5">
+    <h1 class="text-center text-primary mb-4">Cronograma del Proyecto</h1>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Iteración</th>
+                <th>Duración (semanas)</th>
+                <th>Objetivo de la iteración</th>
+                <th>Artefactos del proyecto</th>
+                <th>Fecha aproximada de fin</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>2</td>
+                <td>Planteamiento del proyecto</td>
+                <td>Nombre y visión del proyecto, definición de stakeholders, cronograma, DIA</td>
+                <td>05 de noviembre</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>3</td>
+                <td>Implementación de altas de usuarios dentro de la aplicación</td>
+                <td>Gráficos de evolución, control de accesos, escalabilidad, notificaciones</td>
+                <td>21 de noviembre</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>3</td>
+                <td>Resultados, Reportes y Certificados</td>
+                <td>Generación de reportes y certificados en PDF</td>
+                <td>12 de diciembre</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><strong>Cada semana contamos con 3 Horas Ideales de Trabajo (HIT) por persona considerando 1.5 horas de trabajo en laboratorio y 1.5 horas de trabajo autónomo. Al ser cuatro integrantes, disponemos de 12 HIT por semana, lo que equivale a 36 HIT en el transcurso de las tres semanas que dura cada iteración. Dado que hay tres iteraciones, la capacidad máxima de trabajo sería de 36 HIT por iteración, alcanzando un total de 72 HIT.</strong></p>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
