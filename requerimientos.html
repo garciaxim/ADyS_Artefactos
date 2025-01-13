@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Objetivos y Requerimientos</title>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <span class="text-primary">Artefactos</span> Club de Leones
+            </a>
+            <button class="navbar-toggler" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="nosotros.html" class="nav-link active">Nosotros</a></li>
+                    <!-- Menú desplegable para Sprint 0 -->
+                    <li class="nav-item dropdown">
+                        <a href="#" 
+                            class="nav-link dropdown-toggle" 
+                            id="sprint0Dropdown" 
+                            role="button" 
+                            data-bs-toggle="dropdown" 
+                            aria-expanded="false">
+                            Sprint 0
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="sprint0Dropdown">
+                            <li><a class="dropdown-item" href="Sprint0.html">Descripción</a></li>
+                            <li><a class="dropdown-item" href="Diagramas.html">Diagramas</a></li>
+                            <li><a class="dropdown-item" href="requerimientos.html">Requerimientos</a></li>
+                            <li><a class="dropdown-item" href="#actores">Actores</a></li>
+                            <li><a class="dropdown-item" href="#metodologia-agil">Metodología Ágil</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="sprint1.html" class="nav-link">Sprint 1</a></li>
+                    <li class="nav-item"><a href="sprint2.html" class="nav-link">Sprint 2</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="content mt-5 pt-5">
+        <h1>Iteración 1: Requerimientos</h1>
+        <h2>Objetivo</h2>
+        <p>
+            El objetivo de la Iteración 1 es completar los requerimientos funcionales que se encuentran dentro del alcance 
+            de las 18 horas ideales de programación (HIP) asignadas al equipo. Durante esta fase, el equipo se enfocará en 
+            desarrollar y entregar los siguientes requerimientos funcionales: Registrar evento (RF1), Registrar nuevo evento (RF2), 
+            Modificar evento (RF3), Registro de instructores (RF4), Registros de responsables de evento (RF5), Registro de competidor 
+            (RF6), Inscripción evento (RF7) e Iniciar sesión (RF18).
+        </p>
+        <p>
+            En esta iteración, se priorizará el desarrollo de estas funcionalidades clave, lo que permitirá asegurar un avance sólido 
+            en el proyecto y cumplir con los tiempos establecidos. Además, se mantendrá un monitoreo constante de las horas invertidas, 
+            asegurando que se ajusten a la estimación inicial de 18 HIP, para lo cual se podrá ajustar la asignación de tiempos y tareas 
+            según sea necesario.
+        </p>
+        <p>
+            Los requerimientos que no puedan ser completados dentro de la iteración 1 se trasladarán al backlog, y su desarrollo se 
+            programará para las Iteraciones 2 y 3, según corresponda.
+        </p>
+        <h2>Requerimientos Funcionales</h2>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Descripción</th>
+                    <th>HIP</th>
+                    <th>HRP</th>
+                    <th>Encargado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>RF1</td>
+                    <td>Registrar evento.El responsable del evento podrá registrar un evento que cumpla con las siguientes características: nombre, fecha de inicio y cierre de inscripciones, fechas del evento, duración, horarios, modalidades de participación, costos, requisitos y reglas. </td>
+                    <td>3.5</td>
+                </tr>
+                <tr>
+                    <td>RF2</td>
+                    <td>Registrar nuevo evento.El responsable del evento podrá registrar eventos adicionales no contemplados en los eventos base del club de leones. </td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>RF3</td>
+                    <td>Modificar evento.</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>RF4</td>
+                    <td>Registro instructor</td>
+                    <td>1.5</td>
+                </tr>
+                <tr>
+                    <td>RF5</td>
+                    <td>Registro organizador</td>
+                    <td>1.5</td>
+                </tr>
+                <tr>
+                    <td>RF6</td>
+                    <td>Registro competidor</td>
+                    <td>1.5</td>
+                </tr>
+                <tr>
+                    <td>RF7</td>
+                    <td>Inscripción evento</td>
+                    <td>3.5</td>
+                </tr>
+                <tr>
+                    <td>RF18</td>
+                    <td>Iniciar sesión</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
